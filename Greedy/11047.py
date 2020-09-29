@@ -21,3 +21,5 @@ while(True):
             count = count + int(K / coin[i-1])
             K = K % coin[i-1]
 print(count)
+
+# 가장 큰 동전부터 처리하면 된다.
