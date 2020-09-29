@@ -8,3 +8,5 @@ for i in range(int(n)):
         sum = sum + list[j]
 
 print(sum)
+
+# 정렬 후 가장 작은 것부터 순차적으로 합을 구한다.
