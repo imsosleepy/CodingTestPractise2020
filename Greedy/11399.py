@@ -1,3 +1,9 @@
+"""
+백준 11399. ATM
+blog : https://blog.naver.com/kimdongha15/222103170671
+problem : https://www.acmicpc.net/problem/11399
+"""
+
 n = input()
 
 list = list(map(int, input().split(" ")))

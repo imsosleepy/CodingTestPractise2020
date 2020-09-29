@@ -1,3 +1,9 @@
+"""
+백준 1931. 동전 0
+blog : https://blog.naver.com/kimdongha15/222103169168
+problem : https://www.acmicpc.net/problem/1931
+"""
+
 N, K = map(int, input().split())
 
 coin = []

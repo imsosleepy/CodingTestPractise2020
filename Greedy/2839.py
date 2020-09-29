@@ -1,3 +1,9 @@
+"""
+백준 2839. 설탕배달
+blog : https://blog.naver.com/kimdongha15/222103100903
+problem : https://www.acmicpc.net/problem/2839
+"""
+
 n = int(input())
 
 result = 0
