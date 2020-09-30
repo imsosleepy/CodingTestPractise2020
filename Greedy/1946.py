@@ -1,3 +1,9 @@
+"""
+백준 1946. 신입사원
+blog :
+problem : https://www.acmicpc.net/problem/1946
+"""
+
 import sys
 
 if __name__ =="__main__":
