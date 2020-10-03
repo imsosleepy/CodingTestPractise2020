@@ -1,7 +1,7 @@
 """
-백준 1931. 로프
+백준 1931. 단어 수학
 blog :
-problem : https://www.acmicpc.net/problem/2217
+problem : https://www.acmicpc.net/problem/1339
 """
 import sys
 
@@ -9,13 +9,27 @@ if __name__ == "__main__":
 
     N = int(sys.stdin.readline())
 
-    rope = []
+    ndict = {}
     for i in range(N):
-        rope.append(int(sys.stdin.readline()))
+        slist = input()
+        position = 0
+        sum = 0
+        for s in reversed(slist):
+            if s in list(ndict.keys()):
+                sum = ndict.get(s) + pow(10, position)
+                ndict.update({s: sum})
+            else:
+                ndict.update({s: pow(10, position)})
+            position+=1
+    res = sorted(ndict.items(), key=(lambda x: x[1]), reverse=True)
 
-    rope.sort()
-    max_power = 0
-    for i in range(N):
-        sum = rope[i] * (N-i)
-        max_power = max(sum, max_power)
-    print(max_power)
+    num = 9
+    result = 0
+    for k, v in res:
+        result = result + num * v
+        num = num - 1
+
+    print(result)
+
+
+
