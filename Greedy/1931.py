@@ -5,6 +5,7 @@ problem : https://www.acmicpc.net/problem/1931
 """
 import sys
 
+
 def greedy(meeting):
     meeting_count = 0
     start_time = 0
@@ -15,7 +16,8 @@ def greedy(meeting):
             meeting_count += 1
     return meeting_count
 
-if __name__ =="__main__":
+
+if __name__ == "__main__":
     N = int(sys.stdin.readline())
     input_list = []
     count = 0
@@ -30,4 +32,3 @@ if __name__ =="__main__":
 # 정렬이 제일 중요한 문제였다
 # 제대로 된 정렬 이후에 그리디 알고리즘으로 해결할 수 있음
 # https://daimhada.tistory.com/38 블로그 참고
-
