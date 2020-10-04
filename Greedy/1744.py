@@ -22,8 +22,8 @@ if __name__ == "__main__":
             negative_list.append(num)
 
     result = []
-    positive_list.sort(reverse=True) # 오름 차순 정렬
-    negative_list.sort() # 내림 차순 정렬
+    positive_list.sort(reverse=True) # 내림 차순 정렬
+    negative_list.sort() # 오름 차순 정렬
     # 양수 리스트 처리
     for i in range(0, len(positive_list) - 1, 2):
         # 묶음에 1이 포함되있을 때는 더하는게 곱하는 것보다 크다(묶지 않는다)
