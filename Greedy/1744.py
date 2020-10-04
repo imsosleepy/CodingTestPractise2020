@@ -1,7 +1,7 @@
 """
 백준 1744. 수 묶기
 blog :
-problem : https://www.acmicpc.net/problem/1946
+problem : https://www.acmicpc.net/problem/1744
 """
 
 import sys
